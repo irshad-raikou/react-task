@@ -1,0 +1,37 @@
+.app {
+  margin: 0;
+  padding: 0;
+
+  .login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap : 30px;
+    background-color: rgb(127, 227, 255);
+
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+
+      input{
+        border-radius: 5px;
+        border: 1px solid grey;
+        height: 30px;
+        background-color: rgb(209, 255, 240);
+      }
+
+      button{
+        width: 120px;
+        text-align: center;
+        border:2px solid grey;
+        background-color: aquamarine;
+
+      }
+    }
+  }
+}
