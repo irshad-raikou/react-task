@@ -1,7 +1,41 @@
-.app {
-  margin: 0;
-  padding: 0;
+//Home
 
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap : 30px;
+  background-color: rgb(127, 227, 255);
+  font-size: 40px;
+  font-weight: 800;
+
+  .table{
+    width: 100px;
+    font-size: 30px;
+    border: 2px solid black;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    white-space:nowrap
+  }
+  .link{
+    border-radius: 9px;
+    padding: 5px;
+    border: 2px solid black;
+
+    &:hover {
+      color:rgb(0, 179, 255);
+      background-color: black;
+  }
+  }
+  
+}
+
+//Login //register
   .login {
     height: 100vh;
     display: flex;
@@ -10,6 +44,13 @@
     flex-direction: column;
     gap : 30px;
     background-color: rgb(127, 227, 255);
+
+    .error{
+      padding: 4px;
+      border-radius:7px ;
+      color: black;
+      background-color: red;
+    }
 
     .form {
       display: flex;
@@ -22,6 +63,7 @@
         border-radius: 5px;
         border: 1px solid grey;
         height: 30px;
+        width: 180px;
         background-color: rgb(209, 255, 240);
       }
 
@@ -29,9 +71,14 @@
         width: 120px;
         text-align: center;
         border:2px solid grey;
+        border-radius: 9px;
         background-color: aquamarine;
 
+        &:hover {
+          color:rgb(13, 13, 13);
+          background-color: rgb(92, 161, 239);
+          border: 2px solid  rgb(71, 93, 99);
+      }
       }
     }
   }
-}
